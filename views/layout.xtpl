@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://le5le.com">
+<head>
+  <meta charset="UTF-8"/>
+  <title>{{title}}</title>
+  <meta content="{{description? description : config.description}}" name="description"/>
+  <meta content="{{keywords? keywords : config.keywords}}" name="keywords"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+
+  <link href="{{config.dns}}/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="{{config.dns}}/assets/css/style.css" rel="stylesheet" type="text/css"/>
+  {{{block ("head")}}}
+</head>
+
+<body>
+ {{{block ("body")}}}
+
+</body>
+
+</html>
