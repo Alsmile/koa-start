@@ -29,8 +29,6 @@ export default function (dir) {
   let controllersDir = dir || '../controllers';
   let router = require('koa-router')();
 
-console.info(123, controllersDir)
-
   fs.readdirSync(__dirname + '/' + controllersDir).filter((f) => {
     return f.endsWith('.js');
   }).forEach((f) => {
